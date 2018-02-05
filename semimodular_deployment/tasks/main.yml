@@ -18,6 +18,13 @@
     mode: 0644
     force: yes
 
+- name: Drop in Node.js system profile
+  copy:
+    src: files/nodejs.defaults
+    dest: /etc/dnf/modules.defaults.d/
+    mode: 0644
+    force: yes
+
 - name: Add the Modular DNF COPR repo to install modular-aware DNF
   yum_repository:
     name: fedora-dnf-copr
@@ -34,6 +41,6 @@
   yum_repository:
     name: fedora-modular
     description: Test repo for modules
-    baseurl: https://sgallagh.fedorapeople.org/repo/devconf2017/x86_64/os/
+    baseurl: https://sgallagh.fedorapeople.org/repo/demo-2018-02-05/x86_64/os/
     gpgcheck: no
     enabled: yes
