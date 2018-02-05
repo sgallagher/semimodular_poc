@@ -1,10 +1,10 @@
-# Modularity atop F27 Traditional
+# Modularity atop F28 Traditional
 
 This Ansible playbook will demo that modules can be layered atop a standard
 Fedora Server Edition installation.
 
 ## Prerequisites
-* Install Fedora 27 Server Edition on a virtual or physical system using the
+* Install Fedora 28 Server Edition on a virtual or physical system using the
   standard install media. Run this on a disposable installation; it changes
   core system functionality (DNF) and may cause heartbreak if used on
   critical systems.
